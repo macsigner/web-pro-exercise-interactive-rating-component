@@ -1,6 +1,4 @@
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-}
-
+@import 'imports/settings/vars';
+@import 'imports/mixins/media_queries';
+@import 'imports/settings/font_face';
+@import 'imports/base';
