@@ -23,30 +23,33 @@
 </head>
 <body>
 
-<!-- Rating state start -->
+<main>
+    <section>
+        <h1>How did we do?</h1>
 
-How did we do?
+        <p>Please let us know how we did with your support request. All feedback is appreciated to help us improve our
+            offering!</p>
 
-Please let us know how we did with your support request. All feedback is appreciated
-to help us improve our offering!
+        <form>
+            <label><input type="radio" name="rating" value="1">1</label>
+            <label><input type="radio" name="rating" value="2">2</label>
+            <label><input type="radio" name="rating" value="3">3</label>
+            <label><input type="radio" name="rating" value="4">4</label>
+            <label><input type="radio" name="rating" value="5">5</label>
+            <input type="submit" value="submit">
+        </form>
+    </section>
+    <section>
+        <img src="images/illustration-thank-you.svg" width="162" height="108" alt="Thank you illustration">
 
-1 2 3 4 5
+        <p>You selected <span></span> out of 5</p>
 
-Submit
+        <h2>You selected <span></span> out of 5</h2>
 
-<!-- Rating state end -->
-
-<!-- Thank you state start -->
-
-You selected <!-- Add rating here --> out of 5
-
-Thank you!
-
-We appreciate you taking the time to give a rating. If you ever need more support,
-don’t hesitate to get in touch!
-
-<!-- Thank you state end -->
-
+        <p>We appreciate you taking the time to give a rating. If you ever need more support, don’t hesitate to get in
+            touch!</p>
+    </section>
+</main>
 <script src="src/js/main.js" type="module"></script>
 </body>
 </html>
