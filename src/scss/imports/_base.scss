@@ -10,6 +10,11 @@ html {
 
 body {
     display: flex;
+    justify-content: center;
+    align-items: center;
     min-height: 100vh;
+    padding: 2.4rem;
     font: 1.5rem/1.6 $font-family-main, sans-serif;
+    color: $color-white;
+    background-color: $color-very-dark-blue;
 }
