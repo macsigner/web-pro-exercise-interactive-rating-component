@@ -71,4 +71,27 @@
         border-radius: 50%;
         background-color: rgba($color-white, .1);
     }
+
+    &__title {
+        margin-top: 1em;
+        margin-bottom: .4em;
+        font-size: 2.4rem;
+        line-height: 1.2;
+        color: $color-white;
+    }
+
+    &__info-wrapper {
+        text-align: center;
+    }
+
+    &__info {
+        display: inline-block;
+        margin-right: auto;
+        margin-left: auto;
+        border-radius: var(--rating-size);
+        padding: .7em 1em .4em;
+        line-height: 1.4;
+        color: $color-orange;
+        background-color: rgba($color-white, .1);
+    }
 }
