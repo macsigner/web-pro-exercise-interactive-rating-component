@@ -2,6 +2,9 @@
  * card bem module
  */
 
+:root {
+    --rating-size: 4rem;
+}
 .card {
     width: 41.4rem;
     max-width: 100%;
@@ -9,4 +12,63 @@
     border-radius: 1rem;
     color: $color-light-grey;
     background-color: $color-dark-blue;
+
+    input[type=radio] {
+        position: absolute;
+        opacity: 0;
+    }
+
+    label {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: var(--rating-size);
+        height: var(--rating-size);
+        border-radius: 50%;
+        line-height: 1;
+        background-color: rgba($color-white, .1);
+        color: $color-medium-grey;
+
+        > span {
+            display: block;
+            margin-top: .2em;
+        }
+    }
+
+    label ~ label {
+        margin-left: auto;
+    }
+
+    form {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    input:checked + label {
+        color: $color-white;
+        background-color: $color-orange;
+    }
+
+    input[type=submit] {
+        flex: 0 0 100%;
+        margin-top: 1.2em;
+        padding: .9em 1em .7em;
+        border: none;
+        border-radius: calc(var(--rating-size) / 2);
+        letter-spacing: .1em;
+        text-transform: uppercase;
+        color: $color-white;
+        background-color: $color-orange;
+    }
+
+    &__icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: var(--rating-size);
+        height: var(--rating-size);
+        margin: 0;
+        border-radius: 50%;
+        background-color: rgba($color-white, .1);
+    }
 }
