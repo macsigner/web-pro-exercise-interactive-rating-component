@@ -1,0 +1,48 @@
+/* **************************************************************************
+ *  MEDIA MOTION AG                                                         *
+ ****************************************************************************
+
+    Funktion      flip-wrapper bem module
+    Authors       Mac Signer
+    Datum         04.05.22
+
+*****************************************************************************/
+
+/*
+.flip-wrapper
+
+Styleguide classes.flip-wrapper
+*/
+
+:root {
+    --base-rotation: 0deg;
+}
+
+.flip-wrapper {
+    display: flex;
+    width: 41.4rem;
+    max-width: 100%;
+
+    &--flip {
+        --base-rotation: 180deg;
+    }
+
+    &__item {
+        flex: 0 1 auto;
+        transform: rotateY(0deg);
+        transition: transform .4s;
+        backface-visibility: hidden;
+    }
+
+    &--flip &__item {
+        transform: rotateY(180deg);
+    }
+
+    &__item--back {
+        transform: rotateY(-180deg) translateZ(-.1px);
+    }
+
+    &--flip &__item--back {
+        transform: rotateY(0deg) translateZ(-.1px);
+    }
+}
