@@ -526,9 +526,24 @@ function hmrAcceptRun(bundle, id) {
 }
 
 },{}],"1SICI":[function(require,module,exports) {
+var _normalizeCss = require("normalize.css");
+var _mainScss = require("/src/scss/main.scss");
 document.documentElement.classList.remove('no-js');
 document.documentElement.classList.add('js');
+const form = document.querySelector('.card form');
+form.addEventListener('submit', (e)=>{
+    e.preventDefault();
+    let wrapper = e.target.closest('.flip-wrapper');
+    wrapper.classList.add('flip-wrapper--flip');
+});
+form.addEventListener('change', (e)=>{
+    let formData = new FormData(e.target.closest('form'));
+    let nlDataCount = document.querySelectorAll('[data-count]');
+    nlDataCount.forEach((el)=>{
+        el.innerHTML = formData.get('rating');
+    });
+});
 
-},{}]},["54dwi","1SICI"], "1SICI", "parcelRequire01da")
+},{"normalize.css":"eLmrl","/src/scss/main.scss":"4Pg3x"}],"eLmrl":[function() {},{}],"4Pg3x":[function() {},{}]},["54dwi","1SICI"], "1SICI", "parcelRequire01da")
 
 //# sourceMappingURL=index.18dbc454.js.map
