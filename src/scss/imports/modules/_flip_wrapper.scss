@@ -35,7 +35,7 @@ Styleguide classes.flip-wrapper
     }
 
     &--flip &__item {
-        transform: rotateY(180deg);
+        transform: rotateY(180deg) translateZ(-.1px);
     }
 
     &__item--back {
@@ -43,6 +43,6 @@ Styleguide classes.flip-wrapper
     }
 
     &--flip &__item--back {
-        transform: rotateY(0deg) translateZ(-.1px);
+        transform: rotateY(0deg);
     }
 }
