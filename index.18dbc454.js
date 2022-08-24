@@ -526,7 +526,7 @@ function hmrAcceptRun(bundle, id) {
 }
 
 },{}],"1SICI":[function(require,module,exports) {
-var _normalizeCss = require("normalize.css");
+var _normalizeCss = require("/node_modules/normalize.css/normalize.css");
 var _mainScss = require("/src/scss/main.scss");
 document.documentElement.classList.remove('no-js');
 document.documentElement.classList.add('js');
@@ -544,6 +544,6 @@ form.addEventListener('change', (e)=>{
     });
 });
 
-},{"normalize.css":"eLmrl","/src/scss/main.scss":"4Pg3x"}],"eLmrl":[function() {},{}],"4Pg3x":[function() {},{}]},["54dwi","1SICI"], "1SICI", "parcelRequire01da")
+},{"/src/scss/main.scss":"4Pg3x","/node_modules/normalize.css/normalize.css":"eLmrl"}],"4Pg3x":[function() {},{}],"eLmrl":[function() {},{}]},["54dwi","1SICI"], "1SICI", "parcelRequire01da")
 
 //# sourceMappingURL=index.18dbc454.js.map

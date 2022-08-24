@@ -1,0 +1,2 @@
+document.documentElement.classList.remove("no-js"),document.documentElement.classList.add("js");const e=document.querySelector(".card form");e.addEventListener("submit",(e=>{e.preventDefault(),e.target.closest(".flip-wrapper").classList.add("flip-wrapper--flip")})),e.addEventListener("change",(e=>{let t=new FormData(e.target.closest("form"));document.querySelectorAll("[data-count]").forEach((e=>{e.innerHTML=t.get("rating")}))}));
+//# sourceMappingURL=index.6b2fe793.js.map
